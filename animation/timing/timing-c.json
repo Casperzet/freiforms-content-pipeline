@@ -1,0 +1,50 @@
+{
+ "reel": "c",
+ "lang": "de",
+ "title": "Der Zettel am Kühlschrank",
+ "duration": 21.862,
+ "lines": [
+  {
+   "beat": "hook",
+   "text": "Der Zahnarzttermin stand auf einem Zettel am Kühlschrank.",
+   "screen": "Der Termin stand <em>am Kühlschrank.</em>",
+   "start": 0.25,
+   "end": 3.141
+  },
+  {
+   "beat": "hook2",
+   "text": "Der Zettel ist weg. Der Termin auch.",
+   "screen": "Zettel weg. <em>Termin weg.</em>",
+   "start": 3.491,
+   "end": 5.383
+  },
+  {
+   "beat": "bridge",
+   "text": "Im Betrieb heißt dieser Zettel: Dienstplan an der Pinnwand.",
+   "screen": "Im Betrieb: <em>die Pinnwand.</em>",
+   "start": 5.733,
+   "end": 8.822
+  },
+  {
+   "beat": "pain",
+   "text": "Einer fotografiert ihn, einer nicht. Und am Montag fehlt jemand.",
+   "screen": "Montag <em>fehlt jemand.</em>",
+   "start": 9.172,
+   "end": 12.666
+  },
+  {
+   "beat": "turn",
+   "text": "Ein Plan auf dem Handy, der sich meldet, sobald sich etwas ändert.",
+   "screen": "Ein Plan, <em>der sich meldet.</em>",
+   "start": 13.016,
+   "end": 16.778
+  },
+  {
+   "beat": "cta",
+   "text": "FreiForms. Nichts mehr vergessen. Mehr dazu im Profil.",
+   "screen": "",
+   "start": 17.128,
+   "end": 20.262
+  }
+ ]
+}

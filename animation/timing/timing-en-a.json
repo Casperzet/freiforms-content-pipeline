@@ -1,0 +1,50 @@
+{
+ "reel": "a",
+ "lang": "en",
+ "title": "Who's picking up the kids?",
+ "duration": 26.007,
+ "lines": [
+  {
+   "beat": "hook",
+   "text": "Who's picking up the kids today?",
+   "screen": "Who's picking up <em>the kids today?</em>",
+   "start": 0.25,
+   "end": 2.247
+  },
+  {
+   "beat": "hook2",
+   "text": "Three people thought: someone else.",
+   "screen": "Three people thought: <em>someone else.</em>",
+   "start": 2.597,
+   "end": 4.884
+  },
+  {
+   "beat": "bridge",
+   "text": "At home, that's annoying. At work, it costs money.",
+   "screen": "At home: annoying. <em>At work: expensive.</em>",
+   "start": 5.234,
+   "end": 8.775
+  },
+  {
+   "beat": "pain",
+   "text": "Who opens on Saturday? Who has the keys? Everyone thought: someone else.",
+   "screen": "Saturday. Keys. <em>Someone else.</em>",
+   "start": 9.125,
+   "end": 14.454
+  },
+  {
+   "beat": "turn",
+   "text": "With one plan everyone sees on their phone, there's no more: I thought.",
+   "screen": "One plan. <em>No more “I thought”.</em>",
+   "start": 14.804,
+   "end": 19.03
+  },
+  {
+   "beat": "cta",
+   "text": "FreiForms. Shift planning without the chaos. More on our profile.",
+   "screen": "",
+   "start": 19.38,
+   "end": 24.407
+  }
+ ]
+}

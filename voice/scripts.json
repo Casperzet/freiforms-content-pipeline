@@ -1,0 +1,35 @@
+{
+  "a": {
+    "title": "Wer holt die Kinder?",
+    "lines": [
+      {"beat": "hook",   "text": "Wer holt heute die Kinder ab?", "screen": "Wer holt heute <em>die Kinder ab?</em>"},
+      {"beat": "hook2",  "text": "Drei Leute dachten: der andere.", "screen": "Drei dachten: <em>der andere.</em>"},
+      {"beat": "bridge", "text": "Zu Hause ist das nervig. Im Betrieb kostet genau das Geld.", "screen": "Zu Hause nervig. <em>Im Betrieb teuer.</em>"},
+      {"beat": "pain",   "text": "Wer macht Samstag auf? Wer hat den Schlüssel? Jeder dachte: jemand anderes.", "screen": "Samstag. Schlüssel. <em>Jemand anderes.</em>"},
+      {"beat": "turn",   "text": "Mit einem Plan, den jeder auf dem Handy sieht, gibt es kein: Ich dachte, mehr.", "screen": "Ein Plan. <em>Kein „Ich dachte“.</em>"},
+      {"beat": "cta",    "text": "FreiForms. Schichtplan ohne Chaos. Mehr dazu im Profil.", "screen": ""}
+    ]
+  },
+  "b": {
+    "title": "Kann jemand Milch mitbringen?",
+    "lines": [
+      {"beat": "hook",   "text": "Im Familienchat: Kann jemand Milch mitbringen?", "screen": "„Kann jemand <em>Milch mitbringen?</em>“"},
+      {"beat": "hook2",  "text": "Am Abend stehen drei Packungen im Kühlschrank. Oder keine.", "screen": "Drei Packungen. <em>Oder keine.</em>"},
+      {"beat": "bridge", "text": "Genau so läuft es in vielen Teams. Nur mit Schichten statt Milch.", "screen": "Im Team: <em>Schichten statt Milch.</em>"},
+      {"beat": "pain",   "text": "Zur Frühschicht kommen zwei. Für die Spätschicht keiner.", "screen": "Früh: zwei. <em>Spät: keiner.</em>"},
+      {"beat": "turn",   "text": "Wenn jeder sieht, was schon vergeben ist, macht keiner etwas doppelt. Und nichts bleibt liegen.", "screen": "Jeder sieht es. <em>Nichts doppelt.</em>"},
+      {"beat": "cta",    "text": "FreiForms. Klarheit für dein Team. Mehr dazu im Profil.", "screen": ""}
+    ]
+  },
+  "c": {
+    "title": "Der Zettel am Kühlschrank",
+    "lines": [
+      {"beat": "hook",   "text": "Der Zahnarzttermin stand auf einem Zettel am Kühlschrank.", "screen": "Der Termin stand <em>am Kühlschrank.</em>"},
+      {"beat": "hook2",  "text": "Der Zettel ist weg. Der Termin auch.", "screen": "Zettel weg. <em>Termin weg.</em>"},
+      {"beat": "bridge", "text": "Im Betrieb heißt dieser Zettel: Dienstplan an der Pinnwand.", "screen": "Im Betrieb: <em>die Pinnwand.</em>"},
+      {"beat": "pain",   "text": "Einer fotografiert ihn, einer nicht. Und am Montag fehlt jemand.", "screen": "Montag <em>fehlt jemand.</em>"},
+      {"beat": "turn",   "text": "Ein Plan auf dem Handy, der sich meldet, sobald sich etwas ändert.", "screen": "Ein Plan, <em>der sich meldet.</em>"},
+      {"beat": "cta",    "text": "FreiForms. Nichts mehr vergessen. Mehr dazu im Profil.", "screen": ""}
+    ]
+  }
+}

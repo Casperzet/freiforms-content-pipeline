@@ -1,0 +1,50 @@
+{
+ "reel": "b",
+ "lang": "en",
+ "title": "Can someone grab milk?",
+ "duration": 28.527,
+ "lines": [
+  {
+   "beat": "hook",
+   "text": "Family group chat: Can someone grab milk?",
+   "screen": "“Can someone <em>grab milk?</em>”",
+   "start": 0.25,
+   "end": 2.793
+  },
+  {
+   "beat": "hook2",
+   "text": "By evening, there are three cartons in the fridge. Or none.",
+   "screen": "Three cartons. <em>Or none.</em>",
+   "start": 3.143,
+   "end": 6.835
+  },
+  {
+   "beat": "bridge",
+   "text": "That's exactly how a lot of teams work. Just with shifts instead of milk.",
+   "screen": "At work: <em>shifts instead of milk.</em>",
+   "start": 7.185,
+   "end": 11.852
+  },
+  {
+   "beat": "pain",
+   "text": "Two people show up for the morning shift. Nobody for the evening.",
+   "screen": "Morning: two. <em>Evening: nobody.</em>",
+   "start": 12.202,
+   "end": 16.288
+  },
+  {
+   "beat": "turn",
+   "text": "When everyone can see what's already taken, nothing gets done twice. And nothing gets dropped.",
+   "screen": "Everyone sees it. <em>Nothing twice.</em>",
+   "start": 16.638,
+   "end": 22.211
+  },
+  {
+   "beat": "cta",
+   "text": "FreiForms. Clarity for your team. More on our profile.",
+   "screen": "",
+   "start": 22.561,
+   "end": 26.927
+  }
+ ]
+}

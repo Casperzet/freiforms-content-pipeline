@@ -1,0 +1,50 @@
+{
+ "reel": "c",
+ "lang": "en",
+ "title": "The note on the fridge",
+ "duration": 26.483,
+ "lines": [
+  {
+   "beat": "hook",
+   "text": "The dentist appointment was on a note on the fridge.",
+   "screen": "The appointment was <em>on the fridge.</em>",
+   "start": 0.25,
+   "end": 3.152
+  },
+  {
+   "beat": "hook2",
+   "text": "The note is gone. So is the appointment.",
+   "screen": "Note gone. <em>Appointment gone.</em>",
+   "start": 3.502,
+   "end": 6.37
+  },
+  {
+   "beat": "bridge",
+   "text": "At work, that note is called: the schedule on the notice board.",
+   "screen": "At work: <em>the notice board.</em>",
+   "start": 6.72,
+   "end": 10.563
+  },
+  {
+   "beat": "pain",
+   "text": "One person takes a photo of it, another doesn't. And on Monday, someone's missing.",
+   "screen": "Monday: <em>someone's missing.</em>",
+   "start": 10.913,
+   "end": 16.207
+  },
+  {
+   "beat": "turn",
+   "text": "One plan on your phone that tells you the moment something changes.",
+   "screen": "A plan that <em>tells you.</em>",
+   "start": 16.557,
+   "end": 19.901
+  },
+  {
+   "beat": "cta",
+   "text": "FreiForms. Never miss a shift again. More on our profile.",
+   "screen": "",
+   "start": 20.251,
+   "end": 24.883
+  }
+ ]
+}

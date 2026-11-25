@@ -1,0 +1,50 @@
+{
+ "reel": "b",
+ "lang": "de",
+ "title": "Kann jemand Milch mitbringen?",
+ "duration": 23.383,
+ "lines": [
+  {
+   "beat": "hook",
+   "text": "Im Familienchat: Kann jemand Milch mitbringen?",
+   "screen": "„Kann jemand <em>Milch mitbringen?</em>“",
+   "start": 0.25,
+   "end": 2.932
+  },
+  {
+   "beat": "hook2",
+   "text": "Am Abend stehen drei Packungen im Kühlschrank. Oder keine.",
+   "screen": "Drei Packungen. <em>Oder keine.</em>",
+   "start": 3.282,
+   "end": 6.475
+  },
+  {
+   "beat": "bridge",
+   "text": "Genau so läuft es in vielen Teams. Nur mit Schichten statt Milch.",
+   "screen": "Im Team: <em>Schichten statt Milch.</em>",
+   "start": 6.825,
+   "end": 10.284
+  },
+  {
+   "beat": "pain",
+   "text": "Zur Frühschicht kommen zwei. Für die Spätschicht keiner.",
+   "screen": "Früh: zwei. <em>Spät: keiner.</em>",
+   "start": 10.634,
+   "end": 13.432
+  },
+  {
+   "beat": "turn",
+   "text": "Wenn jeder sieht, was schon vergeben ist, macht keiner etwas doppelt. Und nichts bleibt liegen.",
+   "screen": "Jeder sieht es. <em>Nichts doppelt.</em>",
+   "start": 13.782,
+   "end": 18.264
+  },
+  {
+   "beat": "cta",
+   "text": "FreiForms. Klarheit für dein Team. Mehr dazu im Profil.",
+   "screen": "",
+   "start": 18.614,
+   "end": 21.783
+  }
+ ]
+}

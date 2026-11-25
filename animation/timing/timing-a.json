@@ -1,0 +1,50 @@
+{
+ "reel": "a",
+ "lang": "de",
+ "title": "Wer holt die Kinder?",
+ "duration": 22.176,
+ "lines": [
+  {
+   "beat": "hook",
+   "text": "Wer holt heute die Kinder ab?",
+   "screen": "Wer holt heute <em>die Kinder ab?</em>",
+   "start": 0.25,
+   "end": 1.608
+  },
+  {
+   "beat": "hook2",
+   "text": "Drei Leute dachten: der andere.",
+   "screen": "Drei dachten: <em>der andere.</em>",
+   "start": 1.958,
+   "end": 3.746
+  },
+  {
+   "beat": "bridge",
+   "text": "Zu Hause ist das nervig. Im Betrieb kostet genau das Geld.",
+   "screen": "Zu Hause nervig. <em>Im Betrieb teuer.</em>",
+   "start": 4.096,
+   "end": 7.568
+  },
+  {
+   "beat": "pain",
+   "text": "Wer macht Samstag auf? Wer hat den Schlüssel? Jeder dachte: jemand anderes.",
+   "screen": "Samstag. Schlüssel. <em>Jemand anderes.</em>",
+   "start": 7.918,
+   "end": 12.016
+  },
+  {
+   "beat": "turn",
+   "text": "Mit einem Plan, den jeder auf dem Handy sieht, gibt es kein: Ich dachte, mehr.",
+   "screen": "Ein Plan. <em>Kein „Ich dachte“.</em>",
+   "start": 12.366,
+   "end": 16.824
+  },
+  {
+   "beat": "cta",
+   "text": "FreiForms. Schichtplan ohne Chaos. Mehr dazu im Profil.",
+   "screen": "",
+   "start": 17.174,
+   "end": 20.576
+  }
+ ]
+}

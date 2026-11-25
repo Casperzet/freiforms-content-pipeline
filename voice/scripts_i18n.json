@@ -1,0 +1,71 @@
+{
+  "en": {
+    "a": {"title": "Who's picking up the kids?", "lines": [
+      {"beat": "hook",   "text": "Who's picking up the kids today?", "screen": "Who's picking up <em>the kids today?</em>"},
+      {"beat": "hook2",  "text": "Three people thought: someone else.", "screen": "Three people thought: <em>someone else.</em>"},
+      {"beat": "bridge", "text": "At home, that's annoying. At work, it costs money.", "screen": "At home: annoying. <em>At work: expensive.</em>"},
+      {"beat": "pain",   "text": "Who opens on Saturday? Who has the keys? Everyone thought: someone else.", "screen": "Saturday. Keys. <em>Someone else.</em>"},
+      {"beat": "turn",   "text": "With one plan everyone sees on their phone, there's no more: I thought.", "screen": "One plan. <em>No more “I thought”.</em>"},
+      {"beat": "cta",    "text": "FreiForms. Shift planning without the chaos. More on our profile.", "screen": ""}]},
+    "b": {"title": "Can someone grab milk?", "lines": [
+      {"beat": "hook",   "text": "Family group chat: Can someone grab milk?", "screen": "“Can someone <em>grab milk?</em>”"},
+      {"beat": "hook2",  "text": "By evening, there are three cartons in the fridge. Or none.", "screen": "Three cartons. <em>Or none.</em>"},
+      {"beat": "bridge", "text": "That's exactly how a lot of teams work. Just with shifts instead of milk.", "screen": "At work: <em>shifts instead of milk.</em>"},
+      {"beat": "pain",   "text": "Two people show up for the morning shift. Nobody for the evening.", "screen": "Morning: two. <em>Evening: nobody.</em>"},
+      {"beat": "turn",   "text": "When everyone can see what's already taken, nothing gets done twice. And nothing gets dropped.", "screen": "Everyone sees it. <em>Nothing twice.</em>"},
+      {"beat": "cta",    "text": "FreiForms. Clarity for your team. More on our profile.", "screen": ""}]},
+    "c": {"title": "The note on the fridge", "lines": [
+      {"beat": "hook",   "text": "The dentist appointment was on a note on the fridge.", "screen": "The appointment was <em>on the fridge.</em>"},
+      {"beat": "hook2",  "text": "The note is gone. So is the appointment.", "screen": "Note gone. <em>Appointment gone.</em>"},
+      {"beat": "bridge", "text": "At work, that note is called: the schedule on the notice board.", "screen": "At work: <em>the notice board.</em>"},
+      {"beat": "pain",   "text": "One person takes a photo of it, another doesn't. And on Monday, someone's missing.", "screen": "Monday: <em>someone's missing.</em>"},
+      {"beat": "turn",   "text": "One plan on your phone that tells you the moment something changes.", "screen": "A plan that <em>tells you.</em>"},
+      {"beat": "cta",    "text": "FreiForms. Never miss a shift again. More on our profile.", "screen": ""}]}
+  },
+  "ru": {
+    "a": {"title": "Кто забирает детей?", "lines": [
+      {"beat": "hook",   "text": "Кто сегодня забирает детей?", "screen": "Кто сегодня <em>забирает детей?</em>"},
+      {"beat": "hook2",  "text": "Трое подумали: кто-то другой.", "screen": "Трое подумали: <em>кто-то другой.</em>"},
+      {"beat": "bridge", "text": "Дома это раздражает. А в бизнесе это стоит денег.", "screen": "Дома раздражает. <em>В бизнесе стоит денег.</em>"},
+      {"beat": "pain",   "text": "Кто открывает в субботу? У кого ключи? Каждый думал: кто-то другой.", "screen": "Суббота. Ключи. <em>Кто-то другой.</em>"},
+      {"beat": "turn",   "text": "Когда график у каждого в телефоне, никаких «я думал» больше не бывает.", "screen": "Один план. <em>Без «я думал».</em>"},
+      {"beat": "cta",    "text": "ФрайФормс. График смен без хаоса. Подробнее в профиле.", "screen": ""}]},
+    "b": {"title": "Кто-нибудь купит молоко?", "lines": [
+      {"beat": "hook",   "text": "В семейном чате: кто-нибудь купит молоко?", "screen": "«Кто-нибудь <em>купит молоко?</em>»"},
+      {"beat": "hook2",  "text": "Вечером в холодильнике три пакета. Или ни одного.", "screen": "Три пакета. <em>Или ни одного.</em>"},
+      {"beat": "bridge", "text": "Так же работают многие команды. Только вместо молока смены.", "screen": "В команде: <em>смены вместо молока.</em>"},
+      {"beat": "pain",   "text": "На утреннюю смену пришли двое. На вечернюю никто.", "screen": "Утро: двое. <em>Вечер: никого.</em>"},
+      {"beat": "turn",   "text": "Когда все видят, что уже занято, никто не делает дважды. И ничего не теряется.", "screen": "Все видят. <em>Ничего дважды.</em>"},
+      {"beat": "cta",    "text": "ФрайФормс. Ясность для вашей команды. Подробнее в профиле.", "screen": ""}]},
+    "c": {"title": "Записка на холодильнике", "lines": [
+      {"beat": "hook",   "text": "Запись к стоматологу была на записке на холодильнике.", "screen": "Запись была <em>на холодильнике.</em>"},
+      {"beat": "hook2",  "text": "Записка пропала. Запись тоже.", "screen": "Записки нет. <em>Записи нет.</em>"},
+      {"beat": "bridge", "text": "В бизнесе эта записка называется: график на доске.", "screen": "В бизнесе: <em>график на доске.</em>"},
+      {"beat": "pain",   "text": "Один его сфотографировал, другой нет. А в понедельник кого-то не хватает.", "screen": "В понедельник <em>кого-то нет.</em>"},
+      {"beat": "turn",   "text": "План в телефоне, который сам сообщает, если что-то изменилось.", "screen": "План, который <em>сообщает сам.</em>"},
+      {"beat": "cta",    "text": "ФрайФормс. Больше ничего не забудете. Подробнее в профиле.", "screen": ""}]}
+  },
+  "uk": {
+    "a": {"title": "Хто забирає дітей?", "lines": [
+      {"beat": "hook",   "text": "Хто сьогодні забирає дітей?", "screen": "Хто сьогодні <em>забирає дітей?</em>"},
+      {"beat": "hook2",  "text": "Троє подумали: хтось інший.", "screen": "Троє подумали: <em>хтось інший.</em>"},
+      {"beat": "bridge", "text": "Вдома це дратує. А в бізнесі це коштує грошей.", "screen": "Вдома дратує. <em>У бізнесі коштує грошей.</em>"},
+      {"beat": "pain",   "text": "Хто відкриває в суботу? У кого ключі? Кожен думав: хтось інший.", "screen": "Субота. Ключі. <em>Хтось інший.</em>"},
+      {"beat": "turn",   "text": "Коли графік у кожного в телефоні, жодних «я думав» більше не буває.", "screen": "Один план. <em>Без «я думав».</em>"},
+      {"beat": "cta",    "text": "ФрайФормс. Графік змін без хаосу. Детальніше в профілі.", "screen": ""}]},
+    "b": {"title": "Хтось купить молоко?", "lines": [
+      {"beat": "hook",   "text": "У сімейному чаті: хтось купить молоко?", "screen": "«Хтось <em>купить молоко?</em>»"},
+      {"beat": "hook2",  "text": "Увечері в холодильнику три пакети. Або жодного.", "screen": "Три пакети. <em>Або жодного.</em>"},
+      {"beat": "bridge", "text": "Так само працюють багато команд. Тільки замість молока зміни.", "screen": "У команді: <em>зміни замість молока.</em>"},
+      {"beat": "pain",   "text": "На ранкову зміну прийшли двоє. На вечірню ніхто.", "screen": "Ранок: двоє. <em>Вечір: нікого.</em>"},
+      {"beat": "turn",   "text": "Коли всі бачать, що вже зайнято, ніхто не робить двічі. І нічого не губиться.", "screen": "Всі бачать. <em>Нічого двічі.</em>"},
+      {"beat": "cta",    "text": "ФрайФормс. Ясність для вашої команди. Детальніше в профілі.", "screen": ""}]},
+    "c": {"title": "Записка на холодильнику", "lines": [
+      {"beat": "hook",   "text": "Запис до стоматолога був на записці на холодильнику.", "screen": "Запис був <em>на холодильнику.</em>"},
+      {"beat": "hook2",  "text": "Записка зникла. Запис теж.", "screen": "Записки немає. <em>Запису немає.</em>"},
+      {"beat": "bridge", "text": "У бізнесі ця записка називається: графік на дошці.", "screen": "У бізнесі: <em>графік на дошці.</em>"},
+      {"beat": "pain",   "text": "Один його сфотографував, інший ні. А в понеділок когось бракує.", "screen": "У понеділок <em>когось бракує.</em>"},
+      {"beat": "turn",   "text": "План у телефоні, який сам повідомляє, якщо щось змінилося.", "screen": "План, який <em>повідомляє сам.</em>"},
+      {"beat": "cta",    "text": "ФрайФормс. Більше нічого не забудете. Детальніше в профілі.", "screen": ""}]}
+  }
+}

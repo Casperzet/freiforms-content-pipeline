@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"Inter Display";src:url("assets/fonts/InterDisplay-600.woff") format("woff");font-weight:600}
+@font-face{font-family:"Inter Display";src:url("assets/fonts/InterDisplay-700.woff") format("woff");font-weight:700}
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-Italic.woff") format("woff");font-style:italic}
+html,body{margin:0;background:#000}
+#stage{position:relative;width:540px;height:960px;overflow:hidden;font-family:"Inter Display",system-ui,sans-serif}
+#c{position:absolute;inset:0;display:block}
+#ov{position:absolute;inset:0;pointer-events:none}
+.hook,.cap{position:absolute;left:50%;opacity:0;text-align:center;color:#2b2250;font-weight:700;letter-spacing:-.02em;transform:translate(-50%,0);will-change:transform,opacity}
+.hook{top:112px;width:452px;background:#fff;border:4px solid #2b2250;border-radius:34px;padding:20px 24px 22px;font-size:37px;line-height:1.08;box-shadow:0 8px 0 #2b2250}
+.hook em{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;color:#e5483d}
+.cap{top:640px;width:460px;font-size:34px;line-height:1.1;background:#fff;border:4px solid #2b2250;border-radius:28px;padding:14px 20px 16px;box-shadow:0 6px 0 #2b2250}
+.cap.low{top:690px}
+.veil{position:absolute;inset:0;background:#f7f5f0;opacity:0}
+.endcard{position:absolute;left:50%;top:48%;width:440px;text-align:center;opacity:0;color:#2b2250;transform:translate(-50%,-50%)}
+.endcard .mark{position:relative;width:96px;height:96px;margin:0 auto 18px}
+.endcard .mark i{position:absolute;left:0;top:0;width:64px;height:64px;border-radius:22px;background:#5b7cff}
+.endcard .mark b{position:absolute;right:0;bottom:0;width:64px;height:64px;border-radius:99px;background:#ff9a7e;mix-blend-mode:multiply}
+.endcard .brand{font-size:64px;font-weight:700;letter-spacing:-.04em}
+.endcard .claim{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-size:42px;color:#2f55d4;margin-top:6px}
+.endcard .cta{display:inline-block;margin-top:28px;background:#2b2250;color:#fff;font-size:26px;font-weight:700;padding:14px 28px;border-radius:99px}
+</style></head>
+<body>
+<div id="stage"><canvas id="c"></canvas><div id="ov"></div></div>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+const s = new URLSearchParams(location.search).get('s') || 'a';
+await Promise.all([document.fonts.load('700 40px "Inter Display"'), document.fonts.load('600 40px "Inter Display"'), document.fonts.load('italic 40px "Instrument Serif"')]);
+const tq = new URLSearchParams(location.search).get('timing');
+if (tq) window.TIMING = await (await fetch(`./timing/timing-${tq}.json`)).json();
+const mod = await import(`./scene-${s}.js`);
+const api = mod.build(document.getElementById('stage'), document.getElementById('ov'));
+window.DURATION = api.duration;
+window.setT = (t) => api.update(t);
+window.setT(0);
+window.__ready = true;
+</script></body></html>

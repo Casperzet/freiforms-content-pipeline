@@ -1,0 +1,223 @@
+# -*- coding: utf-8 -*-
+"""Texts for all language versions. Add a language = add one dict to LANGS and MARKETS."""
+
+BRAND = "FreiForms"
+
+# Market technical data (language independent)
+MARKET_META = {
+    "RU": dict(lang="ru", locale="ru-RU", cur="RUB", rate=700, chan="tg"),
+    "KZ": dict(lang="ru", locale="ru-KZ", cur="KZT", rate=3000, chan="wa"),
+    "US": dict(lang="en", locale="en-US", cur="USD", rate=28, chan="mail"),
+    "UK": dict(lang="en", locale="en-GB", cur="GBP", rate=16, chan="wa"),
+    "AE": dict(lang="en", locale="en-AE", cur="AED", rate=40, chan="wa"),
+    "DE": dict(lang="de", locale="de-DE", cur="EUR", rate=25, chan="mail"),
+}
+DEFAULT_MARKET = {"en": "US", "ru": "RU", "de": "DE"}
+LANG_PATH = {"en": "", "ru": "ru/", "de": "de/"}
+LANG_NAME = {"en": "English", "ru": "Русский", "de": "Deutsch"}
+LANG_LOCALE_OG = {"en": "en_US", "ru": "ru_RU", "de": "de_DE"}
+
+LANGS = {}
+
+# ----------------------------------------------------------------- ENGLISH
+LANGS["en"] = dict(
+    title=BRAND + " – Shift navigator, order assistant and website for your business",
+    desc="Shift planning, task boards, a customer chat and order assistant, and a website for small and mid-size business. Adapted to your market. Free intro call.",
+    nav=dict(industries="Industries", products="Products", demo="Demo", roi="Savings", plans="Plans", faq="FAQ"),
+    nav_cta="Free intro call", skip="Skip to content", theme="Switch theme",
+    market_label="Market", preview="Preview: this website is not live yet.",
+    hero_badge="Built for small and mid-size teams",
+    hero_h1="Run every shift <em class='serif accent'>without the chaos.</em>",
+    hero_lead="A shift and task navigator for teams from 5 to 500 people. Plans, tasks, chat and alerts on every phone. Add an order assistant and a website, tuned to your market.",
+    hero_cta1="Get a free intro call", hero_cta2="See the demo",
+    checks=["Runs in the phone browser, no app store", "Fixed price after a short analysis", "Your language, currency and rules"],
+    toasts=["Shift swap approved: Anna and Mehmet", "New order from your assistant", "Task done: delivery checked"],
+    hero_phone=dict(shift="Mon · Early shift", time="06:00 – 14:00", head="Your tasks",
+                    tasks=["Receive morning delivery", "Check expiry dates, aisle 4", "Register 2 from 10:00", "Refill produce shelf"],
+                    chat="Team chat", sos="SOS"),
+    market_title="Pick your country. <em class='serif accent'>We adapt the offer.</em>",
+    market_sub="The page changes its focus, industries, currency and contact channel for your market. These are our starting hypotheses for each country, we confirm them with you on the call.",
+    suggested="Suggested start",
+    ind_kicker="Quick check", ind_title="What does your business do?",
+    ind_sub="Choose an industry. We show typical problems and the tools that fit.",
+    ind_typical="Typical in", ind_reco="Our suggestion", ind_ask="Ask for this setup",
+    industries=dict(
+        retail=dict(label="Retail and grocery", pains=["Shift plans live as a photo in a group chat", "Deliveries and expiry checks on paper", "Tasks by shouting, no overview for the manager"], recs=["shift", "apps"], why="Shifts, tasks and checks on every phone. Delivery notes and paperwork reach the office on their own."),
+        food=dict(label="Cafes and restaurants", pains=["Swaps and sick calls buried in chats", "Bookings and orders by phone only", "Hygiene logs on paper"], recs=["shift", "bot"], why="The rota and hygiene checks live in one app. An assistant takes bookings and orders around the clock."),
+        care=dict(label="Clinics and care", pains=["Rota and route planning eat hours", "Notes written twice, on paper and on screen", "Every appointment is a phone call"], recs=["shift", "web"], why="Staff see duties and tasks on the phone, patients book online."),
+        trades=dict(label="Trades and services", pains=["Jobs and materials on scraps of paper", "Invoices go out weeks late", "Requests arrive only by phone"], recs=["apps", "web"], why="Each job runs from quote to invoice in one app, and new customers book through your website."),
+        logistics=dict(label="Warehouse and logistics", pains=["Crew changes decided on the fly", "Loading and unloading not tracked", "Incidents reported late"], recs=["shift", "apps"], why="Tasks follow the load, crews see their shift, and incidents reach the lead in seconds."),
+    ),
+    prod_kicker="Products", prod_title="Four tools. <em class='serif accent'>One calm business.</em>",
+    prod_sub="Start with one. Add the next when you are ready.", before="Before", after="With " + BRAND,
+    products=dict(
+        shift=dict(name="Shift Navigator", tag="Plans, tasks, team live", before="The rota is a photo in a group chat, jobs are handed out by shouting, and nobody knows what is done.", after=["Everyone sees shift and tasks on the phone", "The lead assigns work live and sees progress", "Swaps, team chat, photos and an SOS button", "Hours and breaks counted against your limits"]),
+        apps=dict(name="Process Apps", tag="Paperwork, orders, approvals", before="Orders on slips, forms typed again and again, invoices late.", after=["Each job moves from request to invoice in one app", "Forms fill themselves from data you already have", "Deadlines and approvals remind themselves", "Reports on one tap"]),
+        bot=dict(name="Order and Chat Assistant", tag="Customers served around the clock", before="Customers write at night and get an answer two days later.", after=["Answers common questions in your channels", "Takes orders and bookings and collects the details", "Hands you only the requests worth your time", "Every lead in one list"]),
+        web=dict(name="Website", tag="Be found, take bookings", before="The site looks dated and requests arrive only by phone.", after=["Modern, fast, phone-first design", "Online booking and request forms", "Requests land in your inbox or chat", "Local search basics included"]),
+    ),
+    demo_kicker="Try it", demo_title="The shift navigator. <em class='serif accent'>Tap it.</em>",
+    demo_text="This is what a shift looks like for your team. Tick off tasks or press SOS. It works the same in daily use.",
+    demo_stats=["Tasks done", "Progress", "Paper slips needed"], demo_reset="Restart shift", demo_cta="Request this for my business",
+    demo_phone=dict(hi="Hi Anna", shift="Today · Early shift", tasks=["Receive morning delivery", "Check expiry dates, aisle 4", "Open register 2 at 10:00", "Refill produce shelf", "Empty the bottle return"], chat="Team chat", sos="SOS", sosmsg="SOS sent to the team lead", all="All done. Great work!"),
+    roi_kicker="Your savings", roi_title="What does admin cost you <em class='serif accent'>per year?</em>",
+    roi=dict(hours="Admin hours per week", rate="Cost per hour", share="Share we can automate (assumption)", result="Potential per year", equals="equals", hrs="hours of work", or_="or about", days="working days", unit_h="h", note="Estimate from your inputs and 46 working weeks. We work out the real figure together on a free call.", cta="Check my potential", hint="All people together: office, planning, forms, coordination."),
+    plans_kicker="Plans", plans_title="Clear plans. <em class='serif accent'>Fixed price.</em>",
+    gift="Website as a gift: prepay the Growth plan and your website is included.",
+    tiers=[
+        dict(name="Start", desc="One tool for your most urgent problem.", feats=["Shift Navigator or one process app", "Setup for your team", "Short training", "Support during launch"], badge=""),
+        dict(name="Growth", desc="Navigator, assistant and website that work together.", feats=["Shift Navigator", "Order and chat assistant", "Website included with prepayment", "Overview dashboard for the owner"], badge="Website included"),
+        dict(name="Custom", desc="Several locations or special rules.", feats=["Multiple sites and roles", "Connection to your existing systems", "Rules for your local labor agreements", "Priority support"], badge=""),
+    ],
+    price_line="Quote after a free call", price_cta="Get a quote",
+    faq_title="Questions we hear most",
+    faq=[("How fast can we start?", "After the free call and a short analysis we agree scope and a fixed price. A first working version is usually a matter of weeks, not months."),
+         ("Do my people need to install an app?", "No. It opens in the phone browser and can be added to the home screen. No app store, no accounts to manage on your side."),
+         ("Where is our data kept?", "We agree the hosting region with you before the start. For customers in the EU we use hosting in the EU."),
+         ("Does it follow our labor rules?", "Hours and breaks are counted against limits you set, so planning stays inside your rules. This is a planning aid, not legal advice. Please check local labor law and agreements."),
+         ("What does the free website include?", "With prepayment of the Growth plan we build you a modern website with booking or request forms. Details are written down in the offer before you pay.")],
+    ct_kicker="Free intro call", ct_title="Tell us about your business",
+    ct=dict(name="Your name", contact="Phone, email or messenger", size="Team size", sizes=["1–10 people", "11–50 people", "51–200 people", "200+ people"], msg="What should work better?", consent="I agree to be contacted about my request.", send="Send request", sending="Sending …", sent_t="Thank you!", sent_p="We will reply shortly with a suggested time for the call.", sent_preview="(Preview: this request was not sent.)", err="Please fill in:", err_name="name", err_contact="contact", err_consent="consent", fail="Sending failed. Please use the direct channel on the right.", direct="Or write directly", copy="Copy", copied="Copied"),
+    foot_about="Shift navigators, assistants and websites for business.", foot_note="Planning aid for hours and breaks, not legal advice.", foot_links="Sections",
+)
+
+# ----------------------------------------------------------------- RUSSIAN
+LANGS["ru"] = dict(
+    title=BRAND + " – навигатор смен, ассистент для заказов и сайт для вашего бизнеса",
+    desc="Планирование смен, задачи, чат и ассистент для заявок клиентов, сайт для малого и среднего бизнеса. Подстраиваем под ваш рынок. Бесплатный вводный звонок.",
+    nav=dict(industries="Отрасли", products="Продукты", demo="Демо", roi="Экономия", plans="Тарифы", faq="Вопросы"),
+    nav_cta="Бесплатный звонок", skip="Перейти к содержимому", theme="Сменить тему",
+    market_label="Рынок", preview="Предпросмотр: сайт ещё не запущен.",
+    hero_badge="Для малых и средних команд",
+    hero_h1="Каждая смена <em class='serif accent'>без хаоса.</em>",
+    hero_lead="Навигатор смен и задач для команд от 5 до 500 человек. Графики, задачи, чат и уведомления на каждом телефоне. Плюс ассистент для заказов и сайт, настроенные под ваш рынок.",
+    hero_cta1="Бесплатный вводный звонок", hero_cta2="Смотреть демо",
+    checks=["Работает в браузере телефона, без магазина приложений", "Фиксированная цена после короткого анализа", "Ваш язык, валюта и правила"],
+    toasts=["Обмен сменами одобрен: Анна и Марат", "Новый заказ от ассистента", "Задача выполнена: поставка проверена"],
+    hero_phone=dict(shift="Пн · Утренняя смена", time="06:00 – 14:00", head="Ваши задачи",
+                    tasks=["Принять утреннюю поставку", "Проверить сроки годности, ряд 4", "Касса 2 с 10:00", "Выложить овощи"],
+                    chat="Чат команды", sos="SOS"),
+    market_title="Выберите страну. <em class='serif accent'>Мы подстроим предложение.</em>",
+    market_sub="Страница меняет акцент, отрасли, валюту и канал связи под ваш рынок. Это наши рабочие гипотезы по каждой стране, на звонке мы подтвердим их с вами.",
+    suggested="С чего начать",
+    ind_kicker="Быстрая проверка", ind_title="Чем занимается ваш бизнес?",
+    ind_sub="Выберите отрасль. Покажем типичные проблемы и подходящие инструменты.",
+    ind_typical="Типично для", ind_reco="Наш совет", ind_ask="Запросить такой набор",
+    industries=dict(
+        retail=dict(label="Розница и продукты", pains=["График смен живёт фото в общем чате", "Приёмка и проверка сроков на бумаге", "Задачи голосом, у руководителя нет картины"], recs=["shift", "apps"], why="Смены, задачи и проверки на каждом телефоне. Накладные и документы сами доходят до офиса."),
+        food=dict(label="Кафе и рестораны", pains=["Обмены сменами и больничные тонут в чатах", "Брони и заказы только по телефону", "Журналы гигиены на бумаге"], recs=["shift", "bot"], why="График и санитарные проверки в одном приложении. Ассистент принимает брони и заказы круглосуточно."),
+        care=dict(label="Клиники и уход", pains=["Графики и маршруты съедают часы", "Записи дважды: на бумаге и в компьютере", "Каждая запись на приём это звонок"], recs=["shift", "web"], why="Сотрудники видят смены и задачи в телефоне, пациенты записываются онлайн."),
+        trades=dict(label="Ремесло и услуги", pains=["Заказы и материалы на клочках бумаги", "Счета уходят с опозданием на недели", "Заявки приходят только по телефону"], recs=["apps", "web"], why="Каждый заказ идёт от предложения до счёта в одном приложении, новые клиенты записываются через сайт."),
+        logistics=dict(label="Склад и логистика", pains=["Состав бригад решается на ходу", "Погрузка и разгрузка не учитываются", "О происшествиях узнают поздно"], recs=["shift", "apps"], why="Задачи следуют за грузом, бригады видят свою смену, а происшествия доходят до старшего за секунды."),
+    ),
+    prod_kicker="Продукты", prod_title="Четыре инструмента. <em class='serif accent'>Один спокойный бизнес.</em>",
+    prod_sub="Начните с одного. Добавьте следующий, когда будете готовы.", before="Было", after="С " + BRAND,
+    products=dict(
+        shift=dict(name="Навигатор смен", tag="Графики, задачи, команда онлайн", before="График это фото в чате, работа раздаётся голосом, никто не знает, что сделано.", after=["Каждый видит смену и задачи в телефоне", "Руководитель раздаёт работу онлайн и видит прогресс", "Обмены, чат, фото и кнопка SOS", "Часы и перерывы считаются по вашим лимитам"]),
+        apps=dict(name="Приложения для процессов", tag="Бумаги, заказы, согласования", before="Заказы на листках, формы набираются снова и снова, счета с опозданием.", after=["Каждая работа идёт от заявки до счёта в одном приложении", "Формы заполняются из уже имеющихся данных", "Сроки и согласования напоминают о себе сами", "Отчёты в одно касание"]),
+        bot=dict(name="Ассистент для заказов и чата", tag="Клиенты обслужены круглосуточно", before="Клиент пишет ночью, а ответ получает через два дня.", after=["Отвечает на частые вопросы в ваших каналах", "Принимает заказы и записи и собирает детали", "Передаёт вам только заявки, на которые стоит тратить время", "Все обращения в одном списке"]),
+        web=dict(name="Сайт", tag="Чтобы находили и записывались", before="Сайт выглядит устаревшим, заявки приходят только по телефону.", after=["Современный быстрый дизайн для телефона", "Онлайн-запись и формы заявок", "Заявки приходят в почту или чат", "Основы местного поиска включены"]),
+    ),
+    demo_kicker="Попробуйте", demo_title="Навигатор смен. <em class='serif accent'>Нажимайте.</em>",
+    demo_text="Так выглядит смена для вашей команды. Отмечайте задачи или нажмите SOS. В работе всё устроено так же просто.",
+    demo_stats=["Задач выполнено", "Прогресс", "Бумажек не нужно"], demo_reset="Начать смену заново", demo_cta="Запросить для моего бизнеса",
+    demo_phone=dict(hi="Привет, Анна", shift="Сегодня · Утренняя смена", tasks=["Принять утреннюю поставку", "Проверить сроки годности, ряд 4", "Открыть кассу 2 в 10:00", "Выложить овощи", "Сдать тару"], chat="Чат команды", sos="SOS", sosmsg="SOS отправлен старшему смены", all="Всё сделано. Отличная работа!"),
+    roi_kicker="Ваша экономия", roi_title="Сколько администрирование стоит вам <em class='serif accent'>в год?</em>",
+    roi=dict(hours="Часов администрирования в неделю", rate="Стоимость часа", share="Доля, которую можно автоматизировать (допущение)", result="Потенциал в год", equals="это", hrs="часов работы", or_="или около", days="рабочих дней", unit_h="ч", note="Оценка по вашим данным и 46 рабочим неделям. Реальную цифру посчитаем вместе на бесплатном звонке.", cta="Проверить мой потенциал", hint="Все люди вместе: офис, планирование, формы, согласования."),
+    plans_kicker="Тарифы", plans_title="Понятные пакеты. <em class='serif accent'>Фиксированная цена.</em>",
+    gift="Сайт в подарок: оплатите пакет «Рост» вперёд, и сайт входит в стоимость.",
+    tiers=[
+        dict(name="Старт", desc="Один инструмент для самой острой проблемы.", feats=["Навигатор смен или одно приложение для процессов", "Настройка под вашу команду", "Короткое обучение", "Поддержка на запуске"], badge=""),
+        dict(name="Рост", desc="Навигатор, ассистент и сайт, которые работают вместе.", feats=["Навигатор смен", "Ассистент для заказов и чата", "Сайт включён при предоплате", "Сводная панель для владельца"], badge="Сайт в подарок"),
+        dict(name="Индивидуально", desc="Несколько точек или особые правила.", feats=["Несколько площадок и ролей", "Подключение к вашим системам", "Правила под ваши трудовые договорённости", "Приоритетная поддержка"], badge=""),
+    ],
+    price_line="Расчёт после бесплатного звонка", price_cta="Получить расчёт",
+    faq_title="Частые вопросы",
+    faq=[("Как быстро можно начать?", "После бесплатного звонка и короткого анализа мы согласуем объём и фиксированную цену. Первая рабочая версия обычно это вопрос недель, а не месяцев."),
+         ("Сотрудникам нужно что-то устанавливать?", "Нет. Всё открывается в браузере телефона и добавляется на главный экран. Без магазина приложений и без лишних аккаунтов на вашей стороне."),
+         ("Где хранятся наши данные?", "Регион размещения мы согласуем с вами до старта. Требования вашей страны к хранению данных учитываем отдельно."),
+         ("Учитываются ли наши трудовые правила?", "Часы и перерывы считаются по лимитам, которые задаёте вы, так что планирование остаётся в ваших рамках. Это помощник в планировании, а не юридическая консультация. Сверяйтесь с местным трудовым законодательством."),
+         ("Что входит в сайт в подарок?", "При предоплате пакета «Рост» мы делаем современный сайт с записью или формой заявки. Детали фиксируются в предложении до оплаты.")],
+    ct_kicker="Бесплатный вводный звонок", ct_title="Расскажите о вашем бизнесе",
+    ct=dict(name="Ваше имя", contact="Телефон, почта или мессенджер", size="Размер команды", sizes=["1–10 человек", "11–50 человек", "51–200 человек", "200+ человек"], msg="Что должно работать лучше?", consent="Согласен(на), чтобы со мной связались по заявке.", send="Отправить заявку", sending="Отправляем …", sent_t="Спасибо!", sent_p="Скоро ответим и предложим время для звонка.", sent_preview="(Предпросмотр: заявка не отправлена.)", err="Заполните:", err_name="имя", err_contact="контакт", err_consent="согласие", fail="Не удалось отправить. Воспользуйтесь прямым каналом справа.", direct="Или напишите напрямую", copy="Копировать", copied="Скопировано"),
+    foot_about="Навигаторы смен, ассистенты и сайты для бизнеса.", foot_note="Помощник в планировании часов и перерывов, не юридическая консультация.", foot_links="Разделы",
+)
+
+# ----------------------------------------------------------------- GERMAN
+LANGS["de"] = dict(
+    title=BRAND + " – Schicht-Navigator, Bestell-Assistent und Website für Ihren Betrieb",
+    desc="Schichtplanung, Aufgaben, Kunden-Chat mit Bestell-Assistent und Website für kleine und mittlere Betriebe. Angepasst an Ihren Markt. Kostenloses Erstgespräch.",
+    nav=dict(industries="Branchen", products="Lösungen", demo="Demo", roi="Nutzen", plans="Pakete", faq="FAQ"),
+    nav_cta="Kostenloses Erstgespräch", skip="Zum Inhalt springen", theme="Design wechseln",
+    market_label="Markt", preview="Vorschau: Diese Website ist noch nicht gestartet.",
+    hero_badge="Für kleine und mittlere Teams",
+    hero_h1="Jede Schicht <em class='serif accent'>ohne Chaos.</em>",
+    hero_lead="Ein Schicht- und Aufgaben-Navigator für Teams von 5 bis 500 Personen. Pläne, Aufgaben, Chat und Hinweise auf jedem Handy. Dazu Bestell-Assistent und Website, passend zu Ihrem Markt.",
+    hero_cta1="Kostenloses Erstgespräch", hero_cta2="Demo ansehen",
+    checks=["Läuft im Handy-Browser, ohne App-Store", "Festpreis nach kurzer Analyse", "Ihre Sprache, Währung und Regeln"],
+    toasts=["Schichttausch bestätigt: Anna und Mehmet", "Neue Bestellung vom Assistenten", "Aufgabe erledigt: Lieferung geprüft"],
+    hero_phone=dict(shift="Mo · Frühschicht", time="06:00 – 14:00", head="Deine Aufgaben",
+                    tasks=["Morgenlieferung annehmen", "MHD-Kontrolle Gang 4", "Kasse 2 ab 10:00", "Obstregal auffüllen"],
+                    chat="Team-Chat", sos="SOS"),
+    market_title="Land wählen. <em class='serif accent'>Wir passen das Angebot an.</em>",
+    market_sub="Die Seite ändert Schwerpunkt, Branchen, Währung und Kontaktkanal für Ihren Markt. Das sind unsere Arbeitsannahmen je Land, im Gespräch klären wir sie mit Ihnen.",
+    suggested="Empfohlener Start",
+    ind_kicker="Schnell-Check", ind_title="In welcher Branche arbeiten Sie?",
+    ind_sub="Branche wählen. Wir zeigen typische Probleme und passende Werkzeuge.",
+    ind_typical="Typisch in", ind_reco="Unsere Empfehlung", ind_ask="Dieses Paket anfragen",
+    industries=dict(
+        retail=dict(label="Handel und Supermarkt", pains=["Dienstplan als Foto in der Chatgruppe", "Wareneingang und MHD-Kontrolle auf Papier", "Aufgaben per Zuruf, kein Überblick für die Leitung"], recs=["shift", "apps"], why="Schichten, Aufgaben und Kontrollen auf jedem Handy. Lieferscheine und Belege landen automatisch im Büro."),
+        food=dict(label="Café und Gastronomie", pains=["Schichttausch und Krankmeldungen im Gruppenchat", "Reservierungen nur per Telefon", "Hygiene-Dokumentation auf Papier"], recs=["shift", "bot"], why="Dienstplan und Hygiene-Checks in einer App. Ein Assistent nimmt Reservierungen und Bestellungen rund um die Uhr an."),
+        care=dict(label="Praxis und Pflege", pains=["Dienst- und Tourenplanung kostet Stunden", "Dokumentation doppelt: Papier und PC", "Für jeden Termin klingelt das Telefon"], recs=["shift", "web"], why="Das Team sieht Dienste und Aufgaben auf dem Handy, Patienten buchen online."),
+        trades=dict(label="Handwerk und Dienstleistung", pains=["Aufträge und Material auf Zetteln", "Rechnungen gehen Wochen später raus", "Anfragen kommen nur per Telefon"], recs=["apps", "web"], why="Jeder Auftrag läuft vom Angebot bis zur Rechnung durch eine App, neue Kunden buchen über Ihre Website."),
+        logistics=dict(label="Lager und Logistik", pains=["Teameinteilung wird spontan entschieden", "Be- und Entladen wird nicht erfasst", "Vorfälle werden zu spät gemeldet"], recs=["shift", "apps"], why="Aufgaben folgen der Ladung, Teams sehen ihre Schicht, Vorfälle erreichen die Leitung in Sekunden."),
+    ),
+    prod_kicker="Lösungen", prod_title="Vier Werkzeuge. <em class='serif accent'>Ein ruhiger Betrieb.</em>",
+    prod_sub="Starten Sie mit einem. Das nächste kommt, wenn Sie bereit sind.", before="Vorher", after="Mit " + BRAND,
+    products=dict(
+        shift=dict(name="Schicht-Navigator", tag="Pläne, Aufgaben, Team live", before="Der Plan ist ein Foto im Gruppenchat, Aufgaben laufen per Zuruf und niemand weiß, was erledigt ist.", after=["Jeder sieht Schicht und Aufgaben auf dem Handy", "Die Leitung verteilt live und sieht den Fortschritt", "Tausch, Team-Chat, Fotos und SOS-Knopf", "Stunden und Pausen nach Ihren Grenzen gezählt"]),
+        apps=dict(name="Prozess-Apps", tag="Papierkram, Aufträge, Freigaben", before="Aufträge auf Zetteln, Formulare immer wieder neu, Rechnungen zu spät.", after=["Jeder Auftrag läuft vom Angebot bis zur Rechnung durch eine App", "Formulare füllen sich mit vorhandenen Daten", "Fristen und Freigaben erinnern sich selbst", "Auswertungen auf Knopfdruck"]),
+        bot=dict(name="Bestell- und Chat-Assistent", tag="Kunden rund um die Uhr betreut", before="Kunden schreiben nachts und bekommen zwei Tage später eine Antwort.", after=["Beantwortet häufige Fragen in Ihren Kanälen", "Nimmt Bestellungen und Buchungen auf und sammelt Details", "Leitet nur Anfragen weiter, die Ihre Zeit wert sind", "Alle Anfragen in einer Liste"]),
+        web=dict(name="Website", tag="Gefunden werden, Termine buchen", before="Die Website wirkt veraltet, Anfragen kommen nur per Telefon.", after=["Modernes, schnelles Design fürs Handy", "Online-Buchung und Anfrageformulare", "Anfragen landen im Postfach oder Chat", "Lokale Suchmaschinen-Grundlagen inklusive"]),
+    ),
+    demo_kicker="Ausprobieren", demo_title="Der Schicht-Navigator. <em class='serif accent'>Tippen Sie mal.</em>",
+    demo_text="So sieht eine Schicht für Ihr Team aus. Haken Sie Aufgaben ab oder drücken Sie SOS. Im Alltag ist es genauso einfach.",
+    demo_stats=["Aufgaben erledigt", "Fortschritt", "Zettel nötig"], demo_reset="Schicht neu starten", demo_cta="Für meinen Betrieb anfragen",
+    demo_phone=dict(hi="Hallo Anna", shift="Heute · Frühschicht", tasks=["Morgenlieferung annehmen", "MHD-Kontrolle Gang 4", "Kasse 2 ab 10:00 öffnen", "Obstregal auffüllen", "Pfandautomat leeren"], chat="Team-Chat", sos="SOS", sosmsg="SOS an die Schichtleitung gesendet", all="Alles erledigt. Gute Arbeit!"),
+    roi_kicker="Ihr Nutzen", roi_title="Was kostet Sie Verwaltung <em class='serif accent'>im Jahr?</em>",
+    roi=dict(hours="Stunden Verwaltung pro Woche", rate="Kosten pro Stunde", share="Davon automatisierbar (Annahme)", result="Potenzial pro Jahr", equals="entspricht", hrs="Stunden Arbeitszeit", or_="oder rund", days="Arbeitstagen", unit_h="Std.", note="Schätzung auf Basis Ihrer Angaben und 46 Arbeitswochen. Den echten Wert ermitteln wir gemeinsam im kostenlosen Gespräch.", cta="Potenzial prüfen lassen", hint="Alle Personen zusammen: Büro, Planung, Formulare, Abstimmung."),
+    plans_kicker="Pakete", plans_title="Klare Pakete. <em class='serif accent'>Feste Preise.</em>",
+    gift="Website geschenkt: Zahlen Sie das Paket Wachstum im Voraus, die Website ist inklusive.",
+    tiers=[
+        dict(name="Start", desc="Ein Werkzeug für Ihr dringendstes Problem.", feats=["Schicht-Navigator oder eine Prozess-App", "Einrichtung für Ihr Team", "Kurze Einweisung", "Unterstützung beim Start"], badge=""),
+        dict(name="Wachstum", desc="Navigator, Assistent und Website im Zusammenspiel.", feats=["Schicht-Navigator", "Bestell- und Chat-Assistent", "Website inklusive bei Vorauszahlung", "Übersicht für die Inhaber"], badge="Website inklusive"),
+        dict(name="Individuell", desc="Mehrere Standorte oder besondere Regeln.", feats=["Mehrere Standorte und Rollen", "Anbindung an Ihre Systeme", "Regeln für Ihre Tarif- und Betriebsvereinbarungen", "Vorrangiger Support"], badge=""),
+    ],
+    price_line="Angebot nach kostenlosem Gespräch", price_cta="Angebot anfragen",
+    faq_title="Häufige Fragen",
+    faq=[("Wie schnell können wir starten?", "Nach dem kostenlosen Gespräch und einer kurzen Analyse legen wir Umfang und Festpreis fest. Eine erste lauffähige Version ist meist eine Frage von Wochen, nicht Monaten."),
+         ("Müssen Mitarbeitende eine App installieren?", "Nein. Alles läuft im Handy-Browser und lässt sich auf den Startbildschirm legen. Kein App-Store, keine Konten, die Sie verwalten müssen."),
+         ("Wo liegen unsere Daten?", "Die Hosting-Region legen wir vor dem Start gemeinsam fest. Für Kunden in der EU nutzen wir Hosting in der EU."),
+         ("Passt das zu unseren Arbeitszeitregeln?", "Stunden und Pausen werden gegen Grenzen gezählt, die Sie festlegen. Das ist eine Planungshilfe, keine Rechtsberatung. Bitte gleichen Sie mit Gesetz, Tarifvertrag und Betriebsrat ab."),
+         ("Was enthält die Website als Geschenk?", "Bei Vorauszahlung des Pakets Wachstum erstellen wir eine moderne Website mit Buchung oder Anfrageformular. Die Details stehen vor der Zahlung im Angebot.")],
+    ct_kicker="Kostenloses Erstgespräch", ct_title="Erzählen Sie uns von Ihrem Betrieb",
+    ct=dict(name="Ihr Name", contact="Telefon, E-Mail oder Messenger", size="Teamgröße", sizes=["1–10 Personen", "11–50 Personen", "51–200 Personen", "200+ Personen"], msg="Was soll besser laufen?", consent="Ich bin einverstanden, dass man mich zu meiner Anfrage kontaktiert.", send="Anfrage senden", sending="Wird gesendet …", sent_t="Vielen Dank!", sent_p="Wir melden uns in Kürze mit einem Terminvorschlag.", sent_preview="(Vorschau: Diese Anfrage wurde nicht versendet.)", err="Bitte ergänzen:", err_name="Name", err_contact="Kontakt", err_consent="Zustimmung", fail="Senden hat nicht geklappt. Bitte nutzen Sie den direkten Kanal rechts.", direct="Oder direkt schreiben", copy="Kopieren", copied="Kopiert"),
+    foot_about="Schicht-Navigatoren, Assistenten und Websites für Betriebe.", foot_note="Planungshilfe für Stunden und Pausen, keine Rechtsberatung.", foot_links="Bereiche",
+)
+
+# ----------------------------------------------------------------- MARKET TEXTS (per language)
+# lead: products suggested as the starting point; order: industry order; tag/lead2: local angle
+MARKETS = {
+    "en": {
+        "US": dict(name="United States", tag="Built for US small business", lead2="Swap group texts and spreadsheets for one shift board. Count hours and breaks against your own overtime rules.", lead=["shift", "bot"], order=["food", "retail", "care", "trades", "logistics"]),
+        "UK": dict(name="United Kingdom", tag="Built for UK teams", lead2="Rotas, shift swaps and tasks on every phone. Hours and breaks visible at a glance.", lead=["shift", "web"], order=["retail", "food", "care", "trades", "logistics"]),
+        "AE": dict(name="United Arab Emirates", tag="Built for multilingual UAE teams", lead2="One shift board for crews who speak different languages. Tasks, swaps and alerts, English first, more languages on request.", lead=["shift", "bot"], order=["retail", "food", "logistics", "care", "trades"]),
+    },
+    "ru": {
+        "RU": dict(name="Россия", tag="Для малого и среднего бизнеса в России", lead2="Уберите графики из Excel и общих чатов. Смены, задачи и заявки клиентов собираются в одном месте.", lead=["shift", "bot"], order=["retail", "food", "trades", "logistics", "care"]),
+        "KZ": dict(name="Казахстан", tag="Для бизнеса в Казахстане", lead2="Смены, задачи и заявки клиентов в одном приложении. Связь удобно держать через WhatsApp.", lead=["shift", "bot"], order=["retail", "food", "logistics", "trades", "care"]),
+    },
+    "de": {
+        "DE": dict(name="Deutschland", tag="Für Betriebe in Deutschland", lead2="Dienstplan, Aufgaben und Belege an einem Ort. Stunden und Pausen nach Ihren Regeln gezählt.", lead=["shift", "apps"], order=["retail", "food", "care", "trades", "logistics"]),
+    },
+}
